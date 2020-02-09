@@ -1,0 +1,40 @@
+.start-btn{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.9);
+  border-radius: 23px;
+  background-color: #2b87dc;
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 30px;
+  &_options{
+    transition: background .3s ease;
+    margin-top: 25px;
+    &:hover{
+      background: #1ab0b9;
+    }
+  }
+  &_green{
+    border: 2px solid #1ab0b9;
+    background: none;
+    color: #1ab0b9;
+    transition: color .3s ease, background .3s ease;
+    &:hover{
+      color: #fff;
+    }
+  }
+  &_dark{
+    background: #3a55af;
+  }
+  &_offers{
+    background: #1ab0b9;
+    margin-top: 40px;
+    transition: background .3s ease;
+    &:hover{
+      background: #2b87dc;
+    }
+  }
+}

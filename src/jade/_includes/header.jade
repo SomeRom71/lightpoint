@@ -1,0 +1,13 @@
+mixin header(options)
+  - options = options ? options : {};
+
+  header.header
+    a(href="#").top-link
+      +svgsprite("back")(class="top-link__icon")
+      span Back
+    a(href="#").logo
+      img(src="images/logo.png", alt="logo")
+    a(href="#").top-link
+      +svgsprite("user")(class="top-link__icon")
+      span Sign in
+    

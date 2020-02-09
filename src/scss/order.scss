@@ -1,0 +1,208 @@
+.wrapp_order{
+  margin-right: 360px;
+}
+
+.order{
+  &-wrap{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+  &-form{
+    margin-top: 65px;
+    &__label{
+      color: rgba(0, 0, 0, 0.8);
+      display: block;
+      font-size: 0.85rem;
+      margin-top: 35px;
+      position: relative;
+    }
+    &__input{
+      outline: none;
+      border: none;
+      display: block;
+      width: 100%;
+      margin-top: 5px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+      font-size: 1.28rem;
+      color: #000;
+      &::-webkit-input-placeholder { /* Edge */
+        color: #000;
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #000;
+      }
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+    &__show{
+      position: absolute;
+      bottom: 5px;
+      right: 0;
+      color: #2b87dc;
+      font-size: 1.14rem;
+    }
+    &__price{
+      font-size: 1.28rem;
+      display: block;
+      margin-top: 25px;
+      font-weight: 500;
+    }
+    &__btn{
+      margin: 55px auto 0;
+      line-height: 45px;
+      border-radius: 25px;
+      background: #2b87dc;
+      border: none;
+      padding: 0 30px;
+      display: block;
+      width: 160px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      font-size: 1.07rem;
+      outline: none;
+    }
+  }
+}
+
+.steps{
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  &__item{
+    &.active{
+      position: relative;
+      border-color: #000;
+      &:before{
+        content: '';
+        background: url('../../images/place.png');
+        width: 8px;
+        height: 12px;
+        display: block;
+        position: absolute;
+        top: -16px;
+        right: -3px;
+      }
+    }
+    &:nth-child(2){
+      flex: 1 0 auto;
+      text-align: center;
+    }
+    font-size: 1rem;
+    font-weight: 500;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+  }
+}
+
+.service{
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 50px;
+  &__title{
+    display: block;
+    font-size: 1.85rem;
+  }
+  &__time{
+    display: block;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.account{
+  text-align: center;
+  margin-top: 40px;
+  &__title{
+    font-size: 2rem;
+  }
+  &__note{
+    font-size: 1.07rem;
+    display: block;
+    margin-top: 30px;
+    &-login{
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+  &-soc{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    &__item{
+      letter-spacing: 1.5px;
+      font-size: 1.07rem;
+      border-radius: 25px;
+      text-transform: uppercase;
+      line-height: 45px;
+
+      display: flex;
+      font-weight: 500;
+      padding: 0 20px 0 30px;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 180px;
+      margin: 0;
+      &_facebook{
+        color: #fff;
+        background-color: #3c5a99;
+      }
+      &_google{
+        background-color: #eeeeee;
+      }
+    }
+    &__img{
+      margin-left: 40px;
+    }
+  }
+}
+
+.your-order{
+  position: fixed;
+  width: 360px;
+  padding: 0 60px;
+  background-color: #f0f0f0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 99;
+  &-header{
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    &__title{
+      width: 100%;
+      font-size: 1.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &-description{
+    margin-top: 50px;
+    &__title{
+      font-weight: 500;
+      font-size: 1.28rem;
+    }
+    &__text{
+      margin-top: 30px;
+      font-size: 1.07rem;
+    }
+    &__total{
+      display: block;
+      margin-top: 30px;
+      font-size: 1.07rem;
+      font-weight: 500;
+    }
+  }
+}

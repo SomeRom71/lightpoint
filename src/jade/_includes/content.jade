@@ -1,0 +1,137 @@
+main.main
+  .container
+    h4.title All news. All of the time. On every device
+    span.subtitle.subtitle_top Subscription options
+    ul.options
+      li.options__item
+        img(src="images/pic1.jpg", alt="pic").options__img
+        a(href="#").options__title Digital
+        span.options__price 99¢
+        span.options__time 4 weeks only then $1.99/week
+        +start-btn('start-btn_options')
+        ul.options-list.options_list
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check")
+            | Unlimited access to online content
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check")
+            | Unlimited access plus breacking news alerts
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check")
+            | A digital replica of the paper, emailed daily
+          li.options-list__item
+            label
+              input(type="checkbox" checked).options-list__input
+              | Checked
+          li.options-list__item
+            label 
+              input(type="checkbox").options-list__input
+              | Empty
+          li.options-list__item
+            label  
+              input(type="checkbox" disabled).options-list__input
+              | Disabled
+        a(href="#").options__link Details
+      li.options__item.options__item_green
+        img(src="images/pic2.jpg", alt="pic").options__img
+        a(href="#").options__title.options__title_green Print + Digital
+        span.options__price 99¢
+        span.options__time 4 weeks only then $1.99/week
+        +start-btn('start-btn_options start-btn_green')
+        ul.options-list.options_list
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check options-list__check_green")
+            | Unlimited access to online content
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check options-list__check_green")
+            | Unlimited access plus breacking news alerts
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check options-list__check_green")
+            | A digital replica of the paper, emailed daily
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check options-list__check_green")
+            | Money-saving offers and weekly sales
+        a(href="#").options__link.options__link_green Details
+      li.options__item.option__item_dark
+        img(src="images/pic3.jpg", alt="pic").options__img
+        a(href="#").options__title Special Offer
+        span.options__price 99¢
+        span.options__time 4 weeks only then $1.99/week
+        +start-btn('start-btn_options start-btn_dark')
+        ul.options-list.options_list
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check options-list__check_dark")
+            | Unlimited access to online content
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check options-list__check_dark")
+            | Unlimited access plus breacking news alerts
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check options-list__check_dark")
+            | A digital replica of the paper, emailed daily
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check options-list__check_dark")
+            | Money-saving offers and weekly sales
+          li.options-list__item
+            +svgsprite('check')(class="options-list__check options-list__check_dark")
+            | The print edition delivered Sunday
+        a(href="#").options__link.options__link_dark Details
+    span.subtitle.offers_subtitle offers
+    ul.offers
+      li.offers__item
+        span.offers__title Sunday only
+        span.offers__text 99¢ / 4 weeks only then $1.99 / week
+        +start-btn('start-btn_offers')
+      li.offers__item
+        span.offers__title Thursday-Sunday
+        span.offers__text 99¢ / 4 weeks only then $1.99 / week
+        +start-btn('start-btn_offers')
+      li.offers__item
+        span.offers__title Monday-Sunday
+        span.offers__text 99¢ / 4 weeks only then $1.99 / week
+        +start-btn('start-btn_offers')
+  .benefits
+    .container
+      h2.benefits__title Benefits
+      ul.benefits-list
+        li.benefits-list__item
+          img(src="images/star.png", alt="star")
+          p.benefits-list__text.benefits-list__text_medium Access to exclusive, behind-the-scenes stories, photos and videos from our journalists 
+          p.benefits-list__text Get the substance behind the slogans with Sun Diego Union Tribune unrivaled coverage of the 2016 U.S. election.
+        li.benefits-list__item
+          img(src="images/star.png", alt="star")
+          p.benefits-list__text.benefits-list__text_medium Access to exclusive, behind-the-scenes stories, photos and videos from our journalists 
+          p.benefits-list__text Get the substance behind the slogans with Sun Diego Union Tribune unrivaled coverage of the 2016 U.S. election.
+        li.benefits-list__item
+          img(src="images/star.png", alt="star")
+          p.benefits-list__text.benefits-list__text_medium Access to exclusive, behind-the-scenes stories, photos and videos from our journalists 
+          p.benefits-list__text Get the substance behind the slogans with Sun Diego Union Tribune unrivaled coverage of the 2016 U.S. election.
+        li.benefits-list__item
+          img(src="images/star.png", alt="star")
+          p.benefits-list__text.benefits-list__text_medium Access to exclusive, behind-the-scenes stories, photos and videos from our journalists 
+          p.benefits-list__text Get the substance behind the slogans with Sun Diego Union Tribune unrivaled coverage of the 2016 U.S. election.
+  .slider
+    .slider__item
+      .slider__text
+        span.slider__subtitle Special
+        p.slider__title Life & Style and Travel sections
+      img(src="images/girl.png", alt="girl")
+    .slider__item
+      .slider__text
+        span.slider__subtitle Special
+        p.slider__title Life & Style and Travel sections
+      img(src="images/girl.png", alt="girl")
+    .slider__item
+      .slider__text
+        span.slider__subtitle Special
+        p.slider__title Life & Style and Travel sections
+      img(src="images/girl.png", alt="girl")
+    .slider__item
+      .slider__text
+        span.slider__subtitle Special
+        p.slider__title Life & Style and Travel sections
+      img(src="images/girl.png", alt="girl")
+  .container
+    .text
+      span.text__title Place some text here
+      p.text__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisl est. Morbi ut odio et felis ultricies tincidunt. Nullam interdum nec lectus at sagittis. Pellentesque fringilla ligula tortor, faucibus dictum massa mollis ac. Aenean sollicitudin mi quis purus placerat, vitae tempor nisl imperdiet. Integer non sodales mauris. 
+      a(href="#").text__more More

@@ -1,0 +1,16 @@
+doctype html
+html(lang='en', class="no-js")
+    head
+        include head.jade
+    body#body
+        include /_includes/mixins/svgsprite
+        include /_includes/components/start-btn
+
+        include /_includes/header2
+
+        block content
+            span no content provided
+        
+        include /_includes/footer2
+
+        include scripts.jade

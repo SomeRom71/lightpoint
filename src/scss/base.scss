@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 14px;
+  font-family: "Roboto";
+}
+
+html, body{
+  height: 100%;
+}
+
+#body{
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapp{
+  flex: 1 0 auto;
+}

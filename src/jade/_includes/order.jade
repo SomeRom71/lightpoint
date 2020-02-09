@@ -1,0 +1,35 @@
+main.main
+  .order-wrap
+    .your-order
+      .your-order-header
+        span.your-order-header__title Your order
+          img(src="images/cart.png", alt="cart")
+      .your-order-description
+        span.your-order-description__title Digital Access
+        p.your-order-description__text Unlimited access to website, and the smartphone and tablet apps. $0.99
+        p.your-order-description__text Sales tax may apply.
+        span.your-order-description__total Total: $0.99
+    ul.steps
+      li.steps__item.active Create an account
+      li.steps__item Billing address
+      li.steps__item Payment
+    .service
+      span.service__title Digital
+      span.service__time 99¢ 4 weeks only then $1.99 / week
+    .account
+      span.account__title Create an account
+      span.account__note Already have an account?
+        a(href="#").account__note-login  log in
+      ul.account-soc
+        a(href="#").account-soc__item.account-soc__item_facebook Facebook
+          img(src="images/fb.png", alt="fb").account-soc__img
+        a(href="#").account-soc__item.account-soc__item_google Google
+          img(src="images/google.png", alt="google").account-soc__img
+    form(action="/").order-form.send-form
+      label(for="mail").order-form__label Email
+      input(type="text" name="mail" id="mail" placeholder="Email").order-form__input
+      label(for="password").order-form__label Password
+        input(type="password" name="password" id="password" placeholder="Password").order-form__input
+        span.order-form__show Show
+      span.order-form__price Price: $ 0.99
+      button(type="submit").order-form__btn Continue

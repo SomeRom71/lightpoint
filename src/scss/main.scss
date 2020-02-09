@@ -1,0 +1,27 @@
+// Common
+@import "variables";
+
+// Base
+@import "fonts";
+@import "base";
+@import "wraps";
+@import "reset";
+// @import "generated/icons";
+@import "generated/sprites";
+@import "generated/svgsprites";
+@import "spritesize";
+
+// Components
+@import "header";
+@import "content";
+@import "order";
+@import "footer";
+@import "popup";
+@import "components/start-btn";
+
+//Media
+@import "media";
+
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
