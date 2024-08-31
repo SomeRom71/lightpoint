@@ -64,7 +64,7 @@
     "smooth-scrollbar": "^8.2.7",
     "uglify-save-license": "0.x",
     "vinyl-buffer": "1.x",
-    "webpack": "^3.10.0",
+    "webpack": "^5.94.0",
     "webpack-stream": "^4.0.3"
   }
 }
